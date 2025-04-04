@@ -6,8 +6,12 @@ function App() {
 
   return (
     <main>
-      <Navbar />
-      <KeyList />
+      <div>
+        <Navbar />
+      </div>
+      <div className="h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/p5.jpg')" }}>
+        <KeyList />
+      </div>
     </main>
   )
 }
