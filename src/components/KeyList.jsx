@@ -29,7 +29,7 @@ const KeyList = () => {
         <div className="h-screen flex flex-col justify-center items-center">
             
 
-            <ul className="flex justify-center flex-row items-center space-x-3">
+            <ul className="flex justify-center flex-row items-center space-x-4">
                 {data.map((key, index) => (
                     <li key={index} className="p-15  border rounded-md shadow-md bg-gray-200 hover:animate-bounce ">
                         <h2 className="text-lg font-semibold">{key.title}</h2>
@@ -38,9 +38,9 @@ const KeyList = () => {
             </ul>
 
             <div className="flex space-x-4 mt-5">
-                <button onClick={() => setSelectedOption('sharps')} className='px-4 py-2 bg-blue-500 text-white rounded-md'>Sharps</button>
-                <button onClick={() => setSelectedOption('naturals')} className='px-4 py-2 bg-blue-500 text-white rounded-md'>Naturals</button>
-                <button onClick={() => setSelectedOption('flats')} className='px-4 py-2 bg-blue-500 text-white rounded-md'>Flats</button>
+                <button onClick={() => setSelectedOption('sharps')} className='px-4 py-2 bg-blue-500 text-white rounded-md text-6xl '>♯</button>
+                <button onClick={() => setSelectedOption('naturals')} className='px-4 py-2 bg-blue-500 text-white rounded-md text-6xl'>♮</button>
+                <button onClick={() => setSelectedOption('flats')} className='px-4 py-2 bg-blue-500 text-white rounded-md text-6xl '>♭</button>
             </div>
         </div>
     )
