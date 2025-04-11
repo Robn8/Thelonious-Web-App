@@ -1,9 +1,7 @@
 import Navbar from "./components/Navbar"
 import KeyList from "./components/KeyList"
 
-function App() {
-  
-
+const App = () => {
   return (
     <main>
       <div>

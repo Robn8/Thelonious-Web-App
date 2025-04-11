@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom"
 
 import { KeyData } from "../data/KeyData";
 import { SharpData } from '../data/SharpData';
@@ -31,9 +32,11 @@ const KeyList = () => {
 
             <ul className="flex justify-center flex-row items-center space-x-4">
                 {data.map((key, index) => (
-                    <li key={index} className="p-15  border rounded-md shadow-md bg-gray-200 hover:animate-bounce ">
-                        <h2 className="text-lg font-semibold">{key.title}</h2>
-                    </li>
+                    <Link to="/key" state={ key }>
+                        <li key={index} className="p-15  border rounded-md shadow-md bg-gray-200 hover:animate-bounce ">
+                            <h2 className="text-lg font-semibold">{key.title}</h2>
+                        </li>
+                    </Link>
                 ))}
             </ul>
 
