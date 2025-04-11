@@ -7,15 +7,22 @@
 
     if (!key) {
         return (
-          <main>
+          <main className="h-screen flex flex-col justify-center items-center">
             <h1>No key selected.</h1>
             <p>You probably navigated here directly without selecting a key.</p>
+            <p>This should take you home:</p>
+            <button 
+              className="cursor-pointer mt-15 p-15 transform hover:scale-175 border rounded-md shadow-md bg-blue-100"
+              onClick={() => navigate(-1)}
+            >
+              HOME
+            </button>
           </main>
         );
       }
 
     return (
-        <main>
+        <main className="h-screen flex flex-col justify-center items-center">
             <div>
                 <h1 
                 onClick={() => navigate(-1)}

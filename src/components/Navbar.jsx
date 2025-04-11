@@ -9,15 +9,15 @@ const Navbar = () => {
       {/* Navigation Links */}
       <div className="flex space-x-6">
         {[
-          { name: "KEY LIST", path: "/key-list" },
-          { name: "THEORY", path: "/theory" },
-          { name: "MY ACCOUNT", path: "/my-account" }
+          { name: "KEY LIST", path: "/" },
+          { name: "THEORY", path: "/key" },
+          { name: "MY ACCOUNT", path: "/key" }
         ].map((link) => (
           <NavLink
             key={link.path}
             to={link.path}
             className={({ isActive }) =>
-              `hover:text-blue-400 pb-2 ${
+              `hover:text-blue-400 hover:animate-pulse pb-2 ${
                 isActive ? "text-blue-400 border-b-2 border-blue-400" : "border-b-2 border-transparent"
               }`
             }
