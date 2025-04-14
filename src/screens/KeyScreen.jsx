@@ -1,4 +1,5 @@
  import { useLocation, useNavigate } from 'react-router-dom';
+ import Navbar from '../components/Navbar';
  
  const KeyScreen = () => {
     const location = useLocation();
@@ -22,19 +23,22 @@
       }
 
     return (
-        <main className="h-screen flex flex-col justify-center items-center">
-            <div className="flex flex-col justify-center items-center">
-                <h1 className="text-2xl underline">{ key.title }</h1>
-                <h1>Chords of {key.title}: </h1>
-                { key.chords }
+      <>
+        <Navbar />
+        <main className="flex flex-col justify-center items-center h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/p1.jpg')" }}>
+            <div className="flex flex-col justify-center items-center mb-2">
+                <h1 className="text-9xl mb-4  text-white underline">{ key.title }</h1>
+                <h1 className="text-white text-3xl">Chords of {key.title}: </h1>
+                <h1 className="text-white text-2xl">{ key.chords }</h1>
             </div>
             <h1 
                 onClick={() => navigate(-1)}
-                className="cursor-pointer text-blue-600 hover:underline"
+                className="cursor-pointer text-white hover:underline hover:text-blue-400"
                 >
                     Home
                 </h1>
         </main>
+      </>
     )
  }
 
