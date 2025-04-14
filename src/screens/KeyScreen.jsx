@@ -23,15 +23,17 @@
 
     return (
         <main className="h-screen flex flex-col justify-center items-center">
-            <div>
-                <h1 
+            <div className="flex flex-col justify-center items-center">
+                <h1 className="text-2xl underline">{ key.title }</h1>
+                <h1>Chords of {key.title}: </h1>
+                { key.chords }
+            </div>
+            <h1 
                 onClick={() => navigate(-1)}
                 className="cursor-pointer text-blue-600 hover:underline"
                 >
                     Home
                 </h1>
-                <h1>The key of: { key.title }</h1>
-            </div>
         </main>
     )
  }

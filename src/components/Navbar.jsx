@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="text-black px-4 py-4 flex justify-between items-center shadow-lg">
+    <nav className="text-black px-5 py-4 flex justify-between items-center shadow-lg">
       {/* App Name */}
       <div className="text-xl font-bold">Thelonious</div>
 
