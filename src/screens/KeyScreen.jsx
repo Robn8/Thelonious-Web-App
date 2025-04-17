@@ -28,8 +28,8 @@
         <main className="flex flex-col justify-center items-center h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/p1.jpg')" }}>
             <div className="flex flex-col justify-center items-center mb-2">
                 <h1 className="text-9xl mb-4  text-white underline">{ key.title }</h1>
-                <h1 className="text-white text-3xl">Chords of {key.title}: </h1>
-                <h1 className="text-white text-2xl">{ key.chords }</h1>
+                <h1 className="text-white text-4xl mb-2">Chords of {key.title} Major: </h1>
+                <h1 className="p-15 text-4xl border rounded-md shadow-md bg-white">{ key.chords }</h1>
             </div>
             <h1 
                 onClick={() => navigate(-1)}
